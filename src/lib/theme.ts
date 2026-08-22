@@ -4,7 +4,7 @@ import type { ThemeConfig } from "antd";
  * FARSAH Tutors — Ant Design theme tokens.
  * Single source of truth so every Ant component (Button, Card, Input,
  * Menu, Drawer, Collapse, Tag, Rate, Form, Typography, Statistic)
- * inherits the brand palette instead of Ant's defaults.
+ * inherits the brand palette instead of Ant's defaults.gg
  */
 export const farsahColors = {
   navy: "#073B73",
