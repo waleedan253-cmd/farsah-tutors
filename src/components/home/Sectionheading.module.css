@@ -1,0 +1,48 @@
+.wrap {
+  max-width: 680px;
+  margin-bottom: 40px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-blue);
+  margin-bottom: 10px;
+}
+
+.title {
+  margin-bottom: 12px !important;
+}
+
+.description {
+  color: var(--color-text-secondary) !important;
+  font-size: 16px !important;
+  margin-bottom: 0 !important;
+}
+
+.light .eyebrow {
+  color: var(--color-cyan);
+}
+
+.light .title {
+  color: var(--color-white) !important;
+}
+
+.light .description {
+  color: #cfe0ef !important;
+}
+
+@media (max-width: 480px) {
+  .wrap {
+    margin-bottom: 28px;
+  }
+}

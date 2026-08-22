@@ -1,0 +1,27 @@
+.section {
+  background: var(--color-navy);
+  padding: 64px 24px;
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat :global(.ant-statistic-title) {
+  color: #a8c3dc !important;
+  font-size: 13px !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.stat :global(.ant-statistic-content) {
+  color: var(--color-white) !important;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800 !important;
+}

@@ -1,0 +1,30 @@
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 64px 24px 88px;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.select {
+  min-width: 200px;
+}
+
+@media (max-width: 480px) {
+  .wrap {
+    padding: 48px 16px 64px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .select {
+    width: 100%;
+  }
+}

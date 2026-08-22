@@ -1,0 +1,32 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.link {
+  padding: 12px 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  border-radius: 10px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.link:hover {
+  background: var(--color-soft-bg);
+  color: var(--color-blue);
+}
+
+.active {
+  color: var(--color-blue);
+  background: var(--color-soft-bg);
+  font-weight: 600;
+}
+
+.ctaWrap {
+  display: block;
+  margin-top: 24px;
+}

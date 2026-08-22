@@ -1,0 +1,78 @@
+.card {
+  height: 100%;
+  overflow: hidden;
+}
+
+.card :global(.ant-card-body) {
+  padding: 20px;
+}
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--color-soft-bg);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tag {
+  background: var(--color-soft-bg) !important;
+  color: var(--color-navy) !important;
+  border: none !important;
+  font-weight: 600 !important;
+}
+
+.tagOutline {
+  background: transparent !important;
+  color: var(--color-text-secondary) !important;
+  border: 1px solid #d9e4ee !important;
+}
+
+.title {
+  font-family: var(--font-display), sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 8px;
+}
+
+.desc {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+.outcomes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.outcomes li {
+  font-size: 13px;
+  color: var(--color-text-primary);
+  padding-left: 18px;
+  position: relative;
+}
+
+.outcomes li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-cyan);
+}

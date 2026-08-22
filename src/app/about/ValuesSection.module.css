@@ -1,0 +1,33 @@
+.section {
+  background: var(--color-soft-bg);
+  padding: 80px 24px;
+}
+
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.tag {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 8px 18px !important;
+  border-radius: 999px !important;
+  border: 1px solid #d9e4ee !important;
+  background: var(--color-white) !important;
+  color: var(--color-navy) !important;
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 56px 16px;
+  }
+}
