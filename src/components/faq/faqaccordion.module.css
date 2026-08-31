@@ -1,0 +1,39 @@
+.wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 64px 24px 88px;
+}
+
+.group {
+  margin-bottom: 36px;
+}
+
+.group:last-child {
+  margin-bottom: 0;
+}
+
+.categoryTitle {
+  font-family: var(--font-display), sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 14px;
+}
+
+.collapse :global(.ant-collapse-header) {
+  font-weight: 600 !important;
+  color: var(--color-text-primary) !important;
+}
+
+.answer {
+  color: var(--color-text-secondary);
+  font-size: 14.5px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .wrap {
+    padding: 48px 16px 64px;
+  }
+}

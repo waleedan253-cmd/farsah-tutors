@@ -1,0 +1,74 @@
+.card {
+  height: 100%;
+  overflow: hidden;
+}
+
+.card :global(.ant-card-body) {
+  padding: 20px;
+}
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--color-soft-bg);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.subjectTag {
+  background: var(--color-soft-bg) !important;
+  color: var(--color-navy) !important;
+  border: none !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+}
+
+.name {
+  font-family: var(--font-display), sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 8px;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: var(--color-text-secondary);
+  margin-bottom: 4px;
+}
+
+.metaIcon {
+  color: var(--color-blue);
+}
+
+.experience {
+  color: var(--color-text-secondary);
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 14px;
+}
+
+.langChip {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-blue);
+  background: #eaf5fc;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.bio {
+  font-size: 13.5px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}

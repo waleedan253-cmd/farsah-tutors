@@ -15,6 +15,8 @@ export const siteConfig = {
   // Placeholder contact details — replace with real business information.
   email: "info@farsahtutors.com",
   phone: "+1 (000) 000-0000",
+  // Digits only, no symbols/spaces — used to build the wa.me deep link.
+  whatsappNumber: "10000000000",
   hours: "Monday – Friday, 9:00 AM – 6:00 PM (GMT)",
   address: "Available online, worldwide",
 };
@@ -24,6 +26,8 @@ export const primaryNavItems: NavItem[] = [
   { label: "About", href: "/about" },
   { label: "Programs", href: "/programs" },
   { label: "Tutors", href: "/tutors" },
+  { label: "Success Stories ", href: "/student-success" },
+
   { label: "How It Works", href: "/how-it-works" },
   { label: "Why FARSAH", href: "/why-farsah" },
   { label: "FAQ", href: "/faq" },
@@ -31,7 +35,7 @@ export const primaryNavItems: NavItem[] = [
 
 export const mobileNavItems: NavItem[] = [
   ...primaryNavItems,
-  { label: "Student Success", href: "/student-success" },
+  { label: "Success Stories", href: "/student-success" },
   { label: "Contact", href: "/contact" },
   { label: "AI Assistant", href: "/ai-assistant" },
 ];
