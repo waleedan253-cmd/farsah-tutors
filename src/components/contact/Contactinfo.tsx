@@ -53,7 +53,7 @@ export default function ContactInfo() {
           </div>
         </li> */}
 
-        {/* <li className={styles.item}>
+        <li className={styles.item}>
           <span className={styles.icon}>
             <WhatsAppOutlined />
           </span>
@@ -68,7 +68,7 @@ export default function ContactInfo() {
               Chat with us directly
             </a>
           </div>
-        </li> */}
+        </li>
 
         <li className={styles.item}>
           <span className={styles.icon}>
