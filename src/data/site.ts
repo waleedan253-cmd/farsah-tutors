@@ -13,10 +13,10 @@ export const siteConfig = {
   description:
     "FARSAH Tutors is an international education brand offering personalized tutoring and academic support across subjects, levels, and countries.",
   // Placeholder contact details — replace with real business information.
-  email: "info@farsahtutors.com",
-  phone: "+1 (000) 000-0000",
+  email: "farsahtutors@gmail.com",
+  phone: "+92 301 9107336",
   // Digits only, no symbols/spaces — used to build the wa.me deep link.
-  whatsappNumber: "10000000000",
+  whatsappNumber: "+92 301 9107336",
   hours: "Monday – Friday, 9:00 AM – 6:00 PM (GMT)",
   address: "Available online, worldwide",
 };
@@ -48,9 +48,21 @@ export const legalNavItems: NavItem[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { label: "Facebook", href: "#", icon: "facebook" },
-  { label: "Instagram", href: "#", icon: "instagram" },
-  { label: "LinkedIn", href: "#", icon: "linkedin" },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/share/19aZPbkuGo/",
+    icon: "facebook",
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/farsahtutors",
+    icon: "instagram",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/farsah-tutors",
+    icon: "linkedin",
+  },
 ];
 
 export const trustPoints: TrustPoint[] = [

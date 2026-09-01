@@ -106,21 +106,7 @@ export const programs: Program[] = [
       "Gain confidence in everyday communication",
     ],
   },
-  {
-    id: "urdu",
-    title: "Urdu",
-    category: "Languages",
-    level: "All Levels",
-    duration: "Flexible",
-    description:
-      "Reading, writing, and comprehension support in Urdu for students at every level.",
-    image: "/urdu.png",
-    learningOutcomes: [
-      "Improve Urdu reading and comprehension",
-      "Strengthen grammar and written expression",
-      "Build confidence in spoken and written Urdu",
-    ],
-  },
+
   {
     id: "quran",
     title: "Quran",
