@@ -47,7 +47,7 @@ export default function Navbar() {
           aria-label={`${siteConfig.name} — Home`}
         >
           <Image
-            src="/icon.png"
+            src="/icons.png"
             alt={`${siteConfig.name} logo`}
             width={44}
             height={44}

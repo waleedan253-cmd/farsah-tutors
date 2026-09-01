@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import AntdProvider from "@/components/common/AntdProvider";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/layout/Footer";
+import WhatsAppFloatButton from "@/components/common/WhatsAppFloatButton";
 import "./globals.css";
 
 // NOTE: next/font/google requires reaching fonts.googleapis.com at build
@@ -40,6 +41,7 @@ export default function RootLayout({
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <WhatsAppFloatButton />
         </AntdProvider>
       </body>
     </html>

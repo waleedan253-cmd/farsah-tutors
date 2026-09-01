@@ -10,8 +10,6 @@ const { TextArea } = Input;
 interface ContactFormValues {
   name: string;
   email: string;
-  phone?: string;
-  subject: string;
   message: string;
 }
 
@@ -106,20 +104,6 @@ export default function ContactForm() {
             ]}
           >
             <Input placeholder="you@example.com" />
-          </Form.Item>
-        </div>
-
-        <div className={styles.row}>
-          <Form.Item name="phone" label="Phone (optional)">
-            <Input placeholder="+1 000 000 0000" />
-          </Form.Item>
-
-          <Form.Item
-            name="subject"
-            label="Subject"
-            rules={[{ required: true, message: "Please enter a subject" }]}
-          >
-            <Input placeholder="What's this about?" />
           </Form.Item>
         </div>
 

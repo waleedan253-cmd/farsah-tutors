@@ -16,7 +16,7 @@ export const siteConfig = {
   email: "farsahtutors@gmail.com",
   phone: "+92 301 9107336",
   // Digits only, no symbols/spaces — used to build the wa.me deep link.
-  whatsappNumber: "+92 301 9107336",
+  whatsappNumber: "923019107336",
   hours: "Monday – Friday, 9:00 AM – 6:00 PM (GMT)",
   address: "Available online, worldwide",
 };
@@ -26,7 +26,7 @@ export const primaryNavItems: NavItem[] = [
   { label: "About", href: "/about" },
   { label: "Programs", href: "/programs" },
   { label: "Tutors", href: "/tutors" },
-  { label: "Success Stories ", href: "/student-success" },
+  // { label: "Success Stories ", href: "/student-success" },
 
   { label: "How It Works", href: "/how-it-works" },
   { label: "Why FARSAH", href: "/why-farsah" },

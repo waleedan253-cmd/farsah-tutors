@@ -25,7 +25,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
     <Drawer
       title={
         <Image
-          src="/icon.png"
+          src="/icons.png"
           alt={`${siteConfig.name} logo`}
           width={140}
           height={32}

@@ -26,7 +26,7 @@ export default function Footer() {
       <div className={styles.inner}>
         <div className={styles.brandCol}>
           <Image
-            src="/icon.png"
+            src="/icons.png"
             alt={`${siteConfig.name} logo`}
             width={160}
             height={36}
