@@ -28,8 +28,6 @@ export default function HomePage() {
         description="Tell us your goals and we'll help you find the right program and tutor."
         primaryLabel="Contact Us"
         primaryHref="/contact"
-        secondaryLabel="Ask AI Assistant"
-        secondaryHref="/ai-assistant"
       />
     </>
   );

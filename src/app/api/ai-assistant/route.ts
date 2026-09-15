@@ -66,26 +66,38 @@ export async function POST(request: Request) {
   try {
     const groq = new Groq({ apiKey });
 
-    const completion = await groq.chat.completions.create({
+    const groqStream = await groq.chat.completions.create({
       model: "openai/gpt-oss-120b",
       messages: [{ role: "system", content: buildSystemPrompt() }, ...messages],
       temperature: 0.4,
       max_tokens: 500,
+      stream: true,
     });
 
-    const reply = completion.choices[0]?.message?.content?.trim();
+    const encoder = new TextEncoder();
 
-    if (!reply) {
-      return NextResponse.json(
-        {
-          success: false,
-          error: "AI Assistant couldn't generate a response. Please try again.",
-        },
-        { status: 502 },
-      );
-    }
+    const stream = new ReadableStream({
+      async start(controller) {
+        try {
+          for await (const chunk of groqStream) {
+            const content = chunk.choices[0]?.delta?.content;
+            if (content) {
+              controller.enqueue(encoder.encode(content));
+            }
+          }
+          controller.close();
+        } catch (err) {
+          console.error("[api/ai-assistant] Stream error:", err);
+          controller.error(err);
+        }
+      },
+    });
 
-    return NextResponse.json({ success: true, reply });
+    return new Response(stream, {
+      headers: {
+        "Content-Type": "text/plain; charset=utf-8",
+      },
+    });
   } catch (err) {
     console.error("[api/ai-assistant] Groq error:", err);
     return NextResponse.json(
@@ -98,3 +110,5 @@ export async function POST(request: Request) {
     );
   }
 }
+
+console.log("GROQ_API_KEY exists:", !!process.env.GROQ_API_KEY);

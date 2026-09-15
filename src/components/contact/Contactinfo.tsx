@@ -65,7 +65,7 @@ export default function ContactInfo() {
               rel="noopener noreferrer"
               className={styles.value}
             >
-              Chat with us directly
+              +92 301 9107336
             </a>
           </div>
         </li>

@@ -1,0 +1,281 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 420px;
+  max-height: 560px;
+  padding: 8px 4px;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 48px 16px;
+}
+
+.emptyAvatar {
+  background: var(--color-blue);
+  margin-bottom: 16px;
+  font-size: 26px;
+}
+
+.emptyTitle {
+  font-family: var(--font-display), sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 8px;
+}
+
+.emptyDesc {
+  color: var(--color-text-secondary);
+  font-size: 14.5px;
+  margin-bottom: 28px;
+  max-width: 400px;
+}
+
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 520px;
+}
+
+.suggestionChip {
+  border: 1px solid #d9e4ee;
+  background: var(--color-white);
+  color: var(--color-navy);
+  font-size: 13.5px;
+  font-weight: 400;
+  padding: 10px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+  min-height: 44px;
+}
+
+.suggestionChip:hover {
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+}
+
+.thread {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.messageRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 85%;
+}
+
+.userRow {
+  flex-direction: row-reverse;
+  margin-left: auto;
+}
+
+.assistantAvatar {
+  background: var(--color-navy);
+  flex-shrink: 0;
+}
+
+.userAvatar {
+  background: var(--color-blue);
+  flex-shrink: 0;
+}
+
+.bubble {
+  padding: 12px 16px;
+  border-radius: 14px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.assistantBubble {
+  background: var(--color-soft-bg);
+  color: var(--color-text-primary);
+  border-bottom-left-radius: 4px;
+}
+
+.userBubble {
+  background: var(--color-blue);
+  color: var(--color-white);
+  border-bottom-right-radius: 4px;
+}
+
+.typing {
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.alert {
+  margin-top: 16px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 12px;
+  padding: 16px 4px 4px;
+  border-top: 1px solid #e7eef5;
+}
+
+.input {
+  flex: 1;
+}
+.typingDots {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.typingDots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-text-secondary);
+  animation: typingBounce 1.2s infinite ease-in-out;
+}
+
+.typingDots span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.typingDots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typingDots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typingBounce {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  30% {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .messages {
+    min-height: 320px;
+  }
+
+  .messageRow {
+    max-width: 92%;
+  }
+}
+.aiFloatButton {
+  right: 24px !important;
+  bottom: 96px !important;
+}
+
+.aiFloatButton::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--color-blue);
+  opacity: 0.5;
+  animation: pulseRing 2s ease-out infinite;
+  z-index: -1;
+}
+
+.drawerHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.headerAvatar {
+  background: var(--color-blue);
+  flex-shrink: 0;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerName {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-navy);
+}
+
+.headerStatus {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.statusDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+  display: inline-block;
+}
+.drawer :global(.ant-drawer-header) {
+  background: linear-gradient(135deg, var(--color-navy), var(--color-blue));
+  border-bottom: none;
+  padding: 16px 20px;
+}
+
+.drawer :global(.ant-drawer-header) .headerName {
+  color: var(--color-white);
+}
+
+.drawer :global(.ant-drawer-header) .headerStatus {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.drawer :global(.ant-drawer-close) {
+  color: white !important;
+}
+
+.drawer :global(.ant-drawer-body) {
+  background: #f7fafc;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+@keyframes pulseRing {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .aiFloatButton {
+    right: 16px !important;
+    bottom: 82px !important;
+  }
+}

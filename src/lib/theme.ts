@@ -7,14 +7,26 @@ import type { ThemeConfig } from "antd";
  * inherits the brand palette instead of Ant's defaults.gg
  */
 export const farsahColors = {
+  // Brand
   navy: "#073B73",
   blue: "#087CC1",
   cyan: "#12A8E5",
   gold: "#E7AA20",
+
+  // Surfaces
   white: "#FFFFFF",
-  softBg: "#F5F8FC",
+  softBg: "#F7F9FC",
+
+  // Typography
   textPrimary: "#172B3A",
-  textSecondary: "#66788A",
+  textSecondary: "#5F7182",
+  textMuted: "#8291A0",
+
+  // Borders & interaction
+  border: "#E3EAF1",
+  borderLight: "#EDF2F7",
+  hoverBg: "#F1F7FB",
+  activeBg: "#EAF5FC",
 } as const;
 
 export const fontFamily =

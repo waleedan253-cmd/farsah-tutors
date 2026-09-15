@@ -38,9 +38,6 @@ export default function Hero() {
               </Button>
             </Link>
           </div>
-          <Link href="/ai-assistant" className={styles.aiCta}>
-            <MessageOutlined /> Ask AI Assistant
-          </Link>
         </div>
 
         <div className={styles.visual}>

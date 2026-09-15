@@ -67,9 +67,6 @@ export default function Navbar() {
         </nav>
 
         <div className={styles.actions}>
-          <Link href="/ai-assistant" className={styles.aiLink}>
-            AI Assistant
-          </Link>
           <Link href="/contact">
             <Button type="primary">Contact Us</Button>
           </Link>

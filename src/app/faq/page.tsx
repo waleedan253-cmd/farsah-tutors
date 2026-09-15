@@ -24,8 +24,6 @@ export default function FAQPage() {
         description="Reach out directly or ask our AI Assistant for an instant answer."
         primaryLabel="Contact Us"
         primaryHref="/contact"
-        secondaryLabel="Ask AI Assistant"
-        secondaryHref="/ai-assistant"
       />
     </>
   );
