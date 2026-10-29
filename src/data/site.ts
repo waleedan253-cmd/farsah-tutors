@@ -14,9 +14,9 @@ export const siteConfig = {
     "FARSAH Tutors is an international education brand offering personalized tutoring and academic support across subjects, levels, and countries.",
   // Placeholder contact details — replace with real business information.
   email: "farsahtutors@gmail.com",
-  phone: "+92 301 9107336",
+  phone: "+971558410520",
   // Digits only, no symbols/spaces — used to build the wa.me deep link.
-  whatsappNumber: "923019107336",
+  whatsappNumber: "971558410520",
   hours: "Monday – Friday, 9:00 AM – 6:00 PM (GMT)",
   address: "Available online, worldwide",
 };
