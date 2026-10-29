@@ -65,7 +65,7 @@ export default function ContactInfo() {
               rel="noopener noreferrer"
               className={styles.value}
             >
-              +92 301 9107336
+              +971558410520
             </a>
           </div>
         </li>
